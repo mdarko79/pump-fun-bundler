@@ -1,10 +1,78 @@
+@"
+# Environment variables and sensitive data
 .env
 _env
+*.env
+.env.local
+.env.*.local
+
+# Private keys and wallets
+keypair.json
+keypairs.json
 wallets.json
+*.key
+*.pem
+private-key.json
+secret-key.json
+
+# Token data
+.last_mint.json
+last_mint.json
+mint.json
+
+# Node modules
 node_modules/
-*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
 dist/
 build/
-.DS_Store
-*.key
+out/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+combined.log
+error.log
+
+# IDE and Editor files
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*~.nib
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
