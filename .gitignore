@@ -1,0 +1,10 @@
+.env
+_env
+wallets.json
+node_modules/
+*.log
+dist/
+build/
+.DS_Store
+*.key
+.vscode/
